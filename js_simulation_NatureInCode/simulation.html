@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Spacial simulation visualisation</title>
+ <!-- the D3.js library -->
+ <script src="https://d3js.org/d3.v5.min.js"></script>
+ <style>
+  body{
+   margin-left:10%;margin-right:10%;text-align: center;font-family: 'Courier New', Courier, monospace;
+  }
+  #simulation{
+   margin: auto;
+  }
+ </style>
+</head>
+<body>
+ <h1>Here is our simulation</h1>
+ <h2>This is a spacial model of inbreeding </h2>
+ <p>When individuals mate with genetically similar individuals, inbreeding is the consequence. In this stochastic, individual-based spatial simulation, individuals can only mate with their immediate local neighbors.</p>
+ <div id="simulation">
+  <script src="simulation.js"></script>
+ </div>
+</body>
+</html>
