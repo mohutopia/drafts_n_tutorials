@@ -1,0 +1,85 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+.grid {
+  border: 1px lightgray;
+	margin: 20px;
+  display: grid;
+  grid-template: 1fr 2fr 10fr 1fr / 1fr 5fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+}
+/* # { grid-area: grid-row-start/ grid-column-start / grid-row-end / grid-column-end; } */
+.a {
+	font-size: 30px;
+	text-align: center;
+}
+.b {
+	grid-column: 2 / span 2;
+	grid-column: 2 / span 2;
+}
+.b span {
+	margin-left: 50px;
+	padding: 5px;
+	border: 1px lightgray solid;
+	border-radius: 20px;
+}
+.c {
+	grid-column: 1 / span 3;
+	font-size: 40px;
+	text-indent: 30px;
+}
+.e {
+	grid-column: 2 / span 2;
+}
+.i {
+	position: absolute;
+	left: 600px;
+	top: 400px;
+}
+.j {
+	position: absolute;
+	left: 600px;
+	top: 400px;
+	border: 1px black solid;
+	border-radius: 20px;
+	background-color: black;
+	animation: orbit1 10s linear infinite;
+}
+@keyframes orbit1 {
+	0% {transform: rotate(0deg) translateX(150px) rotate(0deg) scale(1); z-index: 3;}
+	25% {transform: rotate(90deg) translateX(150px) rotate(-90deg) scale(1);z-index: 3;}
+	50% {transform: rotate(180deg) translateX(150px) rotate(-180deg) scale(1);z-index: 3;}
+	75% {transform: rotate(270deg) translateX(150px) rotate(-270deg) scale(1);z-index: 3;}
+	100% {transform: rotate(360deg) translateX(150px) rotate(-360deg) scale(1);z-index: 3;}
+}
+.k {
+	position: absolute;
+	border: 1px black solid;
+	border-radius: 20px;
+	background-color: black;
+	left: 600px;
+	top: 400px;
+	animation: orbit2 2s linear infinite;
+}
+@keyframes orbit2 {
+            /*from { transform: rotate(0deg) translateX(5px) translateY(120px) rotate(0deg);}
+            to   { transform: rotate(360deg) translateX(5px) translateY(120px) rotate(-360deg); }*/
+	 0% {transform: rotate(0deg) translateX(10px) translateY(50px) rotate(0deg) scale(1); z-index: 2;}
+ 	25% {transform: rotate(90deg) translateX(20px) translateY(60px) rotate(-90deg) scale(.9); z-index: 2;}
+ 	50% {transform: rotate(180deg) translateX(30px) translateY(75px) rotate(-180deg) scale(.8); z-index: 2;}
+ 	75% {transform: rotate(270deg) translateX(20px) translateY(60px) rotate(-270deg) scale(.9); z-index: 2;}
+ 	100% {transform: rotate(360deg) translateX(10px) translateY(50px) rotate(-360deg) scale(1); z-index: 2;}
+}
+.f {
+	grid-column: 1 / span 3;
+}
+.box {
+  background-color: dimgray;
+  color: lightgray;
+  padding: 5px;
+}

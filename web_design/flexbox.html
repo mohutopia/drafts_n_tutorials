@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			My name is whatever.
+		</title>
+		<meta charset="utf-8">
+		<style rel="stylesheet">
+			body {
+				margin: 10%;
+			}
+			#container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				box-shadow: 5px 5px 10px gray;
+				padding: 5px;
+			}
+			.docstyle:nth-child(1) {
+				background-color: red;
+				width: 100%;
+
+			}
+			.docstyle:nth-child(2) {
+				background-color: yellow;
+				text-decoration: none;
+			}
+			.docstyle:nth-child(3) {
+				background-color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			alert("Hello there everyone and welcome");
+			var input;
+			while (input !== "y", input !== "n") {
+				input = prompt("Do you know Eminem?\ny: Yes\nn: No");
+				if (input === "y") {
+					alert("Good, here are some info about a song he made");
+				} else if (input === "n") {
+					alert("Maybe you should learn some things about him before reading this article for context");
+				} else {
+					alert("Please choose one of two options");
+				}
+			}
+		</script>
+		<div id="container">
+		<header class="docstyle">
+			<h1>My name is</h1>
+		</header>
+		<nav class="docstyle">
+			<ul>
+				<li>Accueil</li>
+				<li>Learn</li>
+				<li>About it</li>
+			</ul>
+		</nav>
+		<section class="docstyle">
+			<h2>Title of a song</h2>
+			<p>If you're a rap fan or just a music fan, you might have heard of the legend Eminem. In his album Encore 2004, Eminem released a song named My Name Is. It was an instant hit!</p>
+		</section>
+		</div>
+	</body>
+</html>
