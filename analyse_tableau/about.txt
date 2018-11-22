@@ -1,0 +1,2 @@
+Exercice made in C while learning in the OpenClassrooms
+Tried to convert to TypeScript and Python
